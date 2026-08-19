@@ -1,0 +1,97 @@
+/* Container Principal */
+.section-cards {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cabeçalho */
+.section-header {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  color: #1a56db; /* Azul do título */
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.section-header .divider {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #dbebe3; /* Traço sutil abaixo do título */
+  background: linear-gradient(90deg, #1a56db 0%, #a5c7ff 100%);
+  margin: 0 auto 16px auto;
+  border-radius: 2px;
+}
+
+.section-header p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Grid de Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
+  gap: 24px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Estrutura do Card Individual */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Caixinha do Ícone */
+.icon-card {
+  width: 44px;
+  height: 44px;
+  background-color: #edf2f7; /* Fundo cinza suave do ícone */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-card img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* Conteúdo do Card */
+.card-content h3 {
+  color: #1a56db;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card-content p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}

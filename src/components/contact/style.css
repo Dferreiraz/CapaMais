@@ -1,0 +1,151 @@
+.contact-section {
+  background-color: var(--color-bg);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 1200px;
+  max-width: 1200px;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Coluna Esquerda: Imagem */
+.contact-image-wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.contact-store-image {
+  flex: 1;
+  min-width: 320px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Coluna Direita: Conteúdo */
+.contact-content {
+  flex: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Mapa */
+.contact-map-wrapper {
+  display: flex;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.contact-map-iframe {
+  flex: 1;
+  height: 320px;
+  border: 0;
+  border-radius: 16px;
+}
+
+/* Título */
+.contact-title {
+  font-size: 24px;
+  font-weight: var(--font-weight-header);
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Grid de Informações */
+.contact-info-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.contact-info-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-info-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.contact-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.contact-address-text,
+.contact-details-text,
+.contact-whatsapp-link {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contact-whatsapp-link {
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.contact-whatsapp-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .contact-store-image {
+    min-width: 0;
+    height: 320px;
+  }
+
+  .contact-info-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .contact-info-item {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 24px 16px;
+  }
+
+  .contact-info-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-map-wrapper,
+  .contact-map-iframe {
+    height: 220px;
+  }
+}
