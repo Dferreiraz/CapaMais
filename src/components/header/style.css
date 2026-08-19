@@ -2,26 +2,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
-  padding: 16px 5%;
-  background-color: var(--color-bg);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   border-bottom: 2px solid var(--color-btn);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.img-header {
-  height: 40px;
-  width: auto;
-  display: block;
+  position: relative;
 }
 
 .menu-wrapper {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 150px;
 }
 
 .nav-header {
@@ -34,52 +25,27 @@ header {
 .nav-header a {
   color: var(--color-text);
   font-weight: var(--font-weight-header);
-  position: relative;
-  padding: 4px 0;
   transition: opacity 0.2s ease;
 }
 
-.nav-header a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: var(--color-text);
-  transition: width 0.3s ease;
-}
-
-.nav-header a:hover::after {
-  width: 100%;
+.nav-header a:hover {
+  opacity: 0.8;
 }
 
 .btn-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   background-color: var(--color-btn);
   padding: 12px 25px;
   border-radius: 12px;
   white-space: nowrap;
-  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-header:hover {
-  background-color: var(--color-btn-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn-header a {
   color: var(--color-text);
   font-weight: var(--weight-btn-header);
-}
-
-.btn-header img {
-  width: 18px;
-  height: 18px;
 }
 
 .hamburger-btn {
@@ -92,7 +58,7 @@ header {
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 1010;
+  z-index: 10;
 }
 
 .hamburger-btn span {
@@ -103,6 +69,7 @@ header {
   transition: all 0.3s ease;
 }
 
+/* Animação do botão Hambúrguer para X */
 .hamburger-btn.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -116,15 +83,17 @@ header {
 }
 
 @media (max-width: 992px) {
-  .menu-wrapper {
-    gap: 30px;
+  header {
+    padding: 16px 20px;
   }
 
-  .nav-header {
+  .nav-header,
+  .menu-wrapper {
     gap: 20px;
   }
 }
 
+/* Esconde o menu no Celular e ativa o Hambúrguer */
 @media (max-width: 768px) {
   .hamburger-btn {
     display: flex;
@@ -142,6 +111,7 @@ header {
     gap: 24px;
     border-bottom: 2px solid var(--color-btn);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9;
   }
 
   .menu-wrapper.open {

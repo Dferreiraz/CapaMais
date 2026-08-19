@@ -60,7 +60,7 @@ export const Contact = () => {
                 <strong className="contact-label">WhatsApp:</strong>
               </div>
               <a 
-                href="https://wa.me/5511917243006?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento." 
+                href="https://wa.me/5511917243006" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="contact-whatsapp-link"
