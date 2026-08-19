@@ -6,7 +6,6 @@ import iconAtualizacao from '../../assets/icons/iconAtualizacao.svg'
 import iconComponentes from '../../assets/icons/iconComponentes.svg'
 import iconApple from '../../assets/icons/iconApple.svg'
 
-
 const SERVICES_DATA = [
   {
     id: 'tela',
@@ -39,14 +38,14 @@ const SERVICES_DATA = [
   {
     id: 'componentes',
     title: 'Componentes e Conectores',
-    description: 'Reparamos ou substituímos botões, câmeras e conectores de carga para devolver o desempenho e a funcionalidade do seu dispositivo.',
+    description: 'Reparamos ou substituímos botões, câmeras e conectores de carga para devolver o desempenho do seu dispositivo.',
     icon: iconComponentes,
     alt: 'Ícone para componentes e Conectores',
   },
   {
     id: 'apple',
-    title: 'Apple',
-    description: 'Assistência especializada para iPhone, incluindo troca de tela, bateria, conectores, reparos em placa e diagnóstico completo.',
+    title: 'Apple Especializada',
+    description: 'Assistência especializada para iPhone, incluindo troca de tela, bateria, conectores e reparos em placa.',
     icon: iconApple,
     alt: 'Logo da Apple',
   },
@@ -54,7 +53,7 @@ const SERVICES_DATA = [
 
 export const SectionCards = () => {
   return (
-    <section className="section-cards">
+    <section className="section-cards" id="services">
       <div className="section-header">
         <h2>Serviços Profissionais</h2>
         <span className="divider"></span>

@@ -1,14 +1,12 @@
-/* Container Principal */
 .section-cards {
   padding: 60px 20px;
-  background-color: #f7f9fc;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--color-bg-light);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid var(--color-border-badge);
 }
 
-/* Cabeçalho */
 .section-header {
   text-align: center;
   max-width: 600px;
@@ -16,7 +14,7 @@
 }
 
 .section-header h2 {
-  color: #1a56db; /* Azul do título */
+  color: var(--color-text-blue);
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 12px;
@@ -26,30 +24,27 @@
   display: block;
   width: 40px;
   height: 3px;
-  background-color: #dbebe3; /* Traço sutil abaixo do título */
-  background: linear-gradient(90deg, #1a56db 0%, #a5c7ff 100%);
+  background: linear-gradient(90deg, var(--color-text-blue) 0%, var(--color-btn) 100%);
   margin: 0 auto 16px auto;
   border-radius: 2px;
 }
 
 .section-header p {
-  color: #6b7280;
+  color: var(--color-text-gray);
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
-/* Grid de Cards */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas por padrão */
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   max-width: 1100px;
   width: 100%;
 }
 
-/* Estrutura do Card Individual */
 .card {
-  background-color: #ffffff;
+  background-color: var(--color-text);
   border-radius: 12px;
   padding: 32px 24px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -60,15 +55,14 @@
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Caixinha do Ícone */
 .icon-card {
   width: 44px;
   height: 44px;
-  background-color: #edf2f7; /* Fundo cinza suave do ícone */
+  background-color: var(--color-bg-badge);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -82,16 +76,49 @@
   object-fit: contain;
 }
 
-/* Conteúdo do Card */
 .card-content h3 {
-  color: #1a56db;
+  color: var(--color-text-blue);
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 .card-content p {
-  color: #6b7280;
+  color: var(--color-text-gray);
   font-size: 0.875rem;
   line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .section-cards {
+    padding: 50px 20px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-cards {
+    padding: 40px 16px;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
 }

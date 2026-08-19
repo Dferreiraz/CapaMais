@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,20 +7,19 @@
   text-decoration: none;
 }
 
-:root{
+:root {
   /* == COLORS == */
   --color-bg: #004AC6;
   --color-bg-light: #f9f9ff;
   --color-bg-badge: rgba(0, 74, 198, 0.1);
   --color-border-badge: rgba(0, 74, 198, 0.2);
-  --color-border-img: #fff;
+  --color-border-img: #ffffff;
   --color-btn: #2154C9;
   --color-btn-hover: #003796;
-  --color-text: #fff;
+  --color-text: #ffffff;
   --color-text-blue: #004AC6;
   --color-text-blueII: #00174B;
   --color-text-gray: #64748b; 
-  
 
   /* == FONT WEIGHT == */
   --font-weight-header: 700;
@@ -30,8 +29,17 @@
   --font-primary: "Inter", sans-serif;
 }
 
-body{
-  font-family: var(--font-primary) ;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
   color: var(--color-text);
   background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 90px;
 }

@@ -1,25 +1,55 @@
+import { useState } from 'react'
 import './style.css'
 import LogoCapaMais from '../../assets/images/LogoCapa+.svg'
 import iconwhatsaap from '../../assets/icons/icon-whatsaap.svg'
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header>
-        <img src={LogoCapaMais} alt="Logo da empresa Capa+" className='img-header'/>
+      <a href="#">
+        <img src={LogoCapaMais} alt="Logo da empresa Capa+" className='img-header' />
+      </a>
 
-        <div>
-            <nav className="nav-header">
-                <a href="#services">Serviços</a>
-                <a href="#products">Produtos</a>
-                <a href="#contact">Contato</a>
-                <a href="#location">Localização</a>
-            </nav>
-        </div>
+      <button 
+        className={`hamburger-btn ${isMenuOpen ? 'open' : ''}`} 
+        onClick={toggleMenu}
+        aria-label="Alternar Menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div className={`menu-wrapper ${isMenuOpen ? 'open' : ''}`}>
+        <nav className="nav-header">
+          <a href="#services" onClick={closeMenu}>Serviços</a>
+          <a href="#products" onClick={closeMenu}>Produtos</a>
+          <a href="#contact" onClick={closeMenu}>Contato</a>
+          <a href="#location" onClick={closeMenu}>Localização</a>
+        </nav>
 
         <div className="btn-header">
-            <a>Falar no whatsApp</a>
-            <img src={iconwhatsaap} alt='ícone do whatsapp' />
+          <a
+            href="https://wa.me/5511917243006?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+          >
+            Falar no WhatsApp
+          </a>
+          <img src={iconwhatsaap} alt='ícone do whatsapp' />
         </div>
+      </div>
     </header>
   )
 }

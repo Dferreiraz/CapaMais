@@ -1,58 +1,56 @@
 .contact-section {
   background-color: var(--color-bg);
-  padding: 40px 20px;
+  padding: 60px 20px;
   display: flex;
   justify-content: center;
 }
 
 .contact-container {
-  width: 1200px;
+  width: 100%;
   max-width: 1200px;
   display: flex;
-  gap: 24px;
+  gap: 32px;
   align-items: stretch;
 }
 
-/* Coluna Esquerda: Imagem */
 .contact-image-wrapper {
   flex: 1;
   display: flex;
 }
 
 .contact-store-image {
-  flex: 1;
-  min-width: 320px;
-  height: 500px;
+  width: 100%;
+  min-width: 280px;
+  height: 100%;
+  min-height: 480px;
   object-fit: cover;
   border-radius: 16px;
   display: block;
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Coluna Direita: Conteúdo */
 .contact-content {
   flex: 1.8;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
 }
 
-/* Mapa */
 .contact-map-wrapper {
   display: flex;
-  height: 320px;
+  height: 300px;
   border-radius: 16px;
   overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .contact-map-iframe {
   flex: 1;
-  height: 320px;
+  height: 100%;
   border: 0;
-  border-radius: 16px;
 }
 
-/* Título */
 .contact-title {
   font-size: 24px;
   font-weight: var(--font-weight-header);
@@ -60,7 +58,6 @@
   margin: 0;
 }
 
-/* Grid de Informações */
 .contact-info-grid {
   display: flex;
   justify-content: space-between;
@@ -104,7 +101,7 @@
 
 .contact-whatsapp-link {
   display: inline-block;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
 }
 
 .contact-whatsapp-link:hover {
@@ -112,16 +109,15 @@
   text-decoration: underline;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
   .contact-container {
     flex-direction: column;
-    width: auto;
   }
 
   .contact-store-image {
     min-width: 0;
     height: 320px;
+    min-height: auto;
   }
 
   .contact-info-grid {
@@ -136,7 +132,7 @@
 
 @media (max-width: 600px) {
   .contact-section {
-    padding: 24px 16px;
+    padding: 32px 16px;
   }
 
   .contact-info-grid {
@@ -144,8 +140,7 @@
     gap: 16px;
   }
 
-  .contact-map-wrapper,
-  .contact-map-iframe {
+  .contact-map-wrapper {
     height: 220px;
   }
 }
