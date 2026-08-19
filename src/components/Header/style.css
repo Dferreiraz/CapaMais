@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    gap: 210px;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 2px solid var(--color-btn);
+}
+
+.nav-header{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-header a{
+    color: var(--color-text);
+    font-weight: var(--font-weight-header);
+}
+
+.btn-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--color-btn);
+    padding: 12px 25px;
+    border-radius: 12px;
+}
+
+.btn-header a {
+    font-weight: var(--weight-btn-header);
+}
