@@ -1,9 +1,9 @@
 import { Header } from "./components/Header/header"
 import { Main } from "./components/Main/main"
 import { SectionCards } from "./components/SectionCards/sectionCards"
-import { SectionAcessories } from "./components/sectionAcessories/sectionAcessories"
-import { Contact } from "./components/Contact/Contact"
-import { Footer } from "./components/Footer/Footer"
+import { SectionAcessories } from "./components/SectionAcessories/sectionAcessories"
+import { Contact } from "./components/contact/contact"
+import { Footer } from "./components/footer/footer"
 import './App.css'
 
 
