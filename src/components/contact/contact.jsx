@@ -6,9 +6,8 @@ import imageContact from '../../assets/images/image-contact.svg'
 
 export const Contact = () => {
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-container">
-        
         
         <div className="contact-image-wrapper">
           <img 
@@ -18,11 +17,9 @@ export const Contact = () => {
           />
         </div>
 
-        {/* Coluna Direita: Mapa Interativo e Informações */}
         <div className="contact-content">
           
-          {/* Mapa do Endereço */}
-          <div className="contact-map-wrapper">
+          <div className="contact-map-wrapper" id="location">
             <iframe
               title="Mapa de localização da loja Capa+ na Mooca"
               src="https://maps.google.com/maps?q=Rua%20do%20Oratorio,%201234%20-%20Mooca,%20Sao%20Paulo%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -31,13 +28,10 @@ export const Contact = () => {
             ></iframe>
           </div>
 
-          {/* Título da Seção */}
           <h2 className="contact-title">Onde nos encontrar</h2>
 
-          {/* Grid de Informações de Contato */}
           <div className="contact-info-grid">
             
-            {/* Endereço */}
             <div className="contact-info-item">
               <div className="contact-info-header">
                 <img src={iconEndereco} alt="Ícone de endereço" className="contact-icon" />
@@ -49,7 +43,6 @@ export const Contact = () => {
               </address>
             </div>
 
-            {/* Horário */}
             <div className="contact-info-item">
               <div className="contact-info-header">
                 <img src={iconRelogio} alt="Ícone de relógio" className="contact-icon" />
@@ -61,14 +54,13 @@ export const Contact = () => {
               </p>
             </div>
 
-            {/* WhatsApp */}
             <div className="contact-info-item">
               <div className="contact-info-header">
                 <img src={iconwhatsaap} alt="Ícone do WhatsApp" className="contact-icon" />
                 <strong className="contact-label">WhatsApp:</strong>
               </div>
               <a 
-                href="https://wa.me/5511917243006" 
+                href="https://wa.me/5511917243006?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20atendimento." 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="contact-whatsapp-link"
