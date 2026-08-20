@@ -14,7 +14,8 @@ export const Main = () => {
                 <div className="btn-main">
                     <a className='btn-primary'>Solicitar orçamento</a>
                     <div className="btn-secondary">
-                        <a href='https://wa.me/5511911219846?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.'>Falar no whatsApp</a>
+                        <a href='https://wa.me/5511911219846?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.'
+                        target="_blank" rel="noopener noreferrer">Falar no whatsApp</a>
                         <img src={iconwhatsaap} alt='ícone do whatsapp' />
                     </div>
                 </div>
