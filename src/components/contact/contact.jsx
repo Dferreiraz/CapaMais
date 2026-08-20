@@ -22,7 +22,7 @@ export const Contact = () => {
           <div className="contact-map-wrapper" id="location">
             <iframe
               title="Mapa de localização da loja Capa+ na Mooca"
-              src="https://maps.google.com/maps?q=Rua%20do%20Oratorio,%201234%20-%20Mooca,%20Sao%20Paulo%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Rua%20do%20Oratorio,%201048%20-%20Mooca,%20Sao%20Paulo%20-%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
               className="contact-map-iframe"
               loading="lazy"
             ></iframe>
@@ -38,7 +38,7 @@ export const Contact = () => {
                 <strong className="contact-label">Endereço:</strong>
               </div>
               <address className="contact-address-text">
-                Rua do Oratório, 1234 - Mooca<br />
+                Rua do Oratório, 1048 - Mooca<br />
                 São Paulo - SP, 03116-000
               </address>
             </div>
@@ -60,12 +60,12 @@ export const Contact = () => {
                 <strong className="contact-label">WhatsApp:</strong>
               </div>
               <a 
-                href="https://wa.me/5511917243006" 
+                href="https://wa.me/5511911219846" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="contact-whatsapp-link"
               >
-                (11) 91724-3006
+                (11) 91121-9846
               </a>
             </div>
 

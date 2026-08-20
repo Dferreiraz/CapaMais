@@ -38,7 +38,7 @@ export const Header = () => {
 
                 <div className="btn-header">
                     <a
-                        href="https://wa.me/5511917243006?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+                        href="https://wa.me/5511911219846?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={closeMenu}
